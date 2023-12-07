@@ -13,4 +13,6 @@ jobs:
                 python-version: '3.x'
             
             - name: Test with unittest
-              run: python -m unittest discover -s tests
+              run: |
+                cd github-actions-tests
+                python -m unittest discover -s ./tests
