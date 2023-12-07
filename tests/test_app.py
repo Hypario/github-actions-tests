@@ -11,8 +11,9 @@ class TestCase(unittest.TestCase):
     
     def test_part1(self):
         result = math.prod([app.calculate_ways_quadratic(self.times[i], self.distances[i]) for i in range(len(self.times))])
-        self.assertEqual(result, 288)
+        
+        assert result == 288
     
     def test_part2(self):
         result = app.calculate_ways_quadratic(self.time, self.distance)
-        self.assertEqual(result, 71503)
+        assert result == 71503
